@@ -15,7 +15,7 @@ static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { "#ffffff", "#000000", col_gray2 },
-	[SchemeSel]  = { col_gray4, "#001133", "#ff0000" },
+	[SchemeSel]  = { col_gray4, "#224400", "#ff0000" },
 };
 
 /* tagging */
@@ -30,6 +30,8 @@ static const Rule rules[] = {
 	{ "mpv",      NULL,       NULL,       0,            1,           -1 },
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{"Chromium",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{"Brave-browser",  NULL,  NULL,       1 << 8,       0,           -1 },
 	{ "Links",    NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
@@ -114,4 +116,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
